@@ -20,7 +20,7 @@ cd comp2850-hci-starter
 ```
 Open http://localhost:8080/tasks
 
-**Requirements**: JDK 17+ installed locally
+**Requirements**: JDK 19+ installed locally
 
 ### Lab / FENG (Network) with VSCode
 If you don't have a local machine available, use VSCode from FENG/ RHEL environment:

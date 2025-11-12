@@ -56,7 +56,7 @@ tasks.withType<JavaExec> {
 }
 
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(19)
 }
 
 // Code quality: Detekt (static analysis)
@@ -64,11 +64,11 @@ kotlin {
 detekt {
     config.setFrom(files("detekt.yml"))
     buildUponDefaultConfig = true
-    ignoreFailures = true  // Report but don't fail build
+    ignoreFailures = true // Report but don't fail build
 }
 
 // Code quality: ktlint (code style)
 // Reports violations as warnings, doesn't fail build
 configure<org.jlleitschuh.gradle.ktlint.KtlintExtension> {
-    ignoreFailures.set(true)  // Report but don't fail build
+    ignoreFailures.set(true) // Report but don't fail build
 }
